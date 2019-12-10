@@ -1,9 +1,6 @@
 class Pokemon{
-  constructor(
-    playerNum,
-    randomPokeNum
-    )
-{
+  constructor(playerNum,randomPokeNum){
+
   this.playerNum = playerNum;
   this.randomPokeNum = randomPokeNum;
   this.name = null;

@@ -1,9 +1,5 @@
 class Weather{
-  constructor(
-    lat,
-    lon
-  )
-{
+  constructor(lat,lon){
   this.lat = lat;
   this.lon = lon;
   this.wind = null;
@@ -18,18 +14,18 @@ class Weather{
   getWeatherFromServer() {
     $.ajax({
       dataType: "json",
-      url: "api.openweathermap.org/data/2.5/weather?lat=" + this.lat + "&lon=" + this.lon,
+      url: "https://api.openweathermap.org/data/2.5/weather?lat=" + this.lat + "&lon=" + this.lon,
       method: "GET",
       headers: {
         "X-Access-Token": "885cf57956d026ee2398f97d86e38437"
       },
-      success: this.renderWeathersuccess,
+      success: this.renderWeatherSuccess,
       error: this.renderWeatherFail,
 
     })
   }
 
-  renderWeathersuccess(response){
+  renderWeatherSuccess(response){
     console.log(response);
   }
 
