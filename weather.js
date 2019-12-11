@@ -33,7 +33,7 @@ class Weather{
   }
 
   renderWeathersuccess(response){
-    console.log(response);
+    // console.log(response);
     this.wind = response.wind.speed;
     this.weather = response.weather[0].main;
     this.cityBackground();

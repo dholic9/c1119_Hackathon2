@@ -11,7 +11,7 @@ function initializeApp() {
   var taco = new Taco
   taco.getTacoFromServer();
 
-  var weather = new Weather(-26.2051, 28.0497)
+  // var weather = new Weather(-26.2051, 28.0497)
 }
 
 function startTacoVideo() {
@@ -74,6 +74,5 @@ function selectMap(city) {
       var location10 = new Maps(37.7006, -83.9739, 'learningFuze', 15);
       location10.render();
       break;
-
   }
 }
